@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from "@react-navigation/native"
-import StackNavigator from '../Flota-De-Camiones/components/index';
+import StackNavigator from './components/index';
 import 'react-native-gesture-handler';
 
 export default function App() {
@@ -11,10 +11,12 @@ export default function App() {
     <NavigationContainer>
         <StackNavigator />
     </NavigationContainer>
-    /*<View style={styles.container}>
+    /*
+    <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
-    </View>*/
+    </View>
+    */
   );
 }
 

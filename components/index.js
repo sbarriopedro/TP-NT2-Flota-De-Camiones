@@ -23,11 +23,11 @@ export default function StackNavigator() {
     const Stack = createStackNavigator()
 
     return (
-        <StackNavigator initialRouteName={"Home"}>
-            <Stack.Screen name={"Login"} component={Login}></Stack.Screen>
+        <Stack.Navigator initialRouteName={"Home"}>
+            
             <Stack.Screen name={"Home"} component={Home}></Stack.Screen>
+            <Stack.Screen name={"Login"} component={Login}></Stack.Screen>
             <Stack.Screen name={"HomeConductor"} component={HomeConductor}></Stack.Screen>
-            {/*
             <Stack.Screen name={"AltaCamion"} component={AltaCamion}></Stack.Screen>
             <Stack.Screen name={"BajaCamion"} component={BajaCamion}></Stack.Screen>
             <Stack.Screen name={"DetalleCamion"} component={DetalleCamion}></Stack.Screen>
@@ -40,7 +40,6 @@ export default function StackNavigator() {
             <Stack.Screen name={"BajaEncargado"} component={BajaEncargado}></Stack.Screen>
             <Stack.Screen name={"DetalleEncargado"} component={DetalleEncargado}></Stack.Screen>
             <Stack.Screen name={"EditarEncargado"} component={EditarEncargado}></Stack.Screen>
-             */}
-        </StackNavigator>
+        </Stack.Navigator>
     )
 }
